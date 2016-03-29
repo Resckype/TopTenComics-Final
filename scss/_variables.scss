@@ -1,0 +1,59 @@
+// ###
+// ###
+// Variables scss
+// ###
+// ###
+
+// ###
+// Color
+// ###
+
+$blue: #005A7F; // Blue
+$tonic: #FFC000; // Tonic
+$dark-blue: #00425B; //dark-blue
+$dark-tonic: #fdad00;
+// $success-color: #A3D900; //Succes
+// $warning-color: #FF8000; // Warning
+// $alert-color: #D30F17; // Red Alert
+$light-grey: #EAEAEA;
+$medium-grey: #222222;
+// $dark-gray: #0a0a0a;
+// $black: #000;
+$white-less: rgba(white,0.5);
+
+// ###
+// Font Family & Font-size
+// ###
+
+$font-size-less: 11px;
+$font-size-small: 13px;
+$font-size-base: 15px;
+$font-size-big: 18px;
+// $font-size-more: ;
+
+
+// ###
+// Template Header Var
+// ###
+$header-nav-menu-height: 66px;
+$header-container-gradient: linear-gradient(to top,  $dark-blue 0%,$blue 100%);
+$header-nav-register-bg: url('../img/template/hoverprofil1.png') no-repeat right;
+$header-nav-menu-bg: url('../img/template/texture1.png') repeat-y center center;
+$header-nav-search-bar-bg: url('../img/template/recherche-bg.png') $medium-grey repeat-x center center;
+$header-nav-input-search: url('../img/template/icosearch.png') transparent no-repeat center center;
+
+// ###
+// Template Footer Var
+// ###
+$footer-marge-top: 20px;
+$footer-nav-bg: url('../img/template/footer-bg.png') black no-repeat center left;
+
+
+// ###
+// Template Slider Var
+// ###
+
+$slider-image-bg: url('../img/img-test.jpg') no-repeat center center;
+$slide-container-height-large: 660px;
+$slide-info-height-large: 420px;
+$slide-info-padtop-large: ($slide-container-height-large - $slide-info-height-large);

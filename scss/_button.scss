@@ -1,0 +1,55 @@
+.button-tonic{
+  background: $tonic;
+  display: block;
+  margin: 0 auto;
+  padding: 14px 0;
+  font-family: 'AvenirMedium';
+  text-transform: uppercase;
+  color: $white;
+  border-bottom: 3px solid $tonic;
+  i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px solid white;
+    font-size: $font-size-big;
+  }
+  // &:hover{
+  //   background: $dark-tonic;
+  //   color: $white;
+  //   i{
+  //     border-color: $white;
+  //   }
+  // }
+}
+
+.button-avis{
+  background: $tonic;
+  display: block;
+  margin: 0 auto;
+  padding: 14px 0;
+  font-family: 'AvenirMedium';
+  font-size: $font-size-base;
+  text-transform: uppercase;
+  color: $white;
+  vertical-align: middle;
+  i{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: 1px solid white;
+    font-size: $font-size-base;
+    line-height: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+  // &:hover{
+  //   background: $dark-tonic;
+  //   color: $white;
+  //   i{
+  //     border-color: $white;
+  //   }
+  // }
+}

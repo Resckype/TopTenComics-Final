@@ -1,0 +1,494 @@
+//  Regroupement des pages Calendrier / Parutions / Listing
+
+.main-content{
+  background: $white;
+  position: relative;
+  padding-bottom: $footer-marge-top;
+  .columns{
+    margin: 0;
+  }
+  .ttc-search{
+    margin: 30px 0;
+    background: white;
+    padding: 0 40px;
+    h2{
+      font-family: 'AvenirBlack';
+      font-size: 24px;
+      color: $medium-grey;
+      text-transform: uppercase;
+      span{
+        font-family: 'AvenirBlack';
+        color: $blue;
+      }
+    }
+    h3{
+      font-family: 'AvenirBook';
+      font-size: 20px;
+      color: $medium-grey;
+      text-transform: uppercase;
+    }
+    .date-chose{
+      font-family: 'AvenirBook';
+      font-size: $font-size-small;
+      color: $medium-grey;
+    }
+    .main-search{
+      margin-top: 20px;
+      .search-base{
+          position: relative;
+          vertical-align: middle;
+          input{
+            border: none;
+            vertical-align: middle;
+          }
+          .input-group-field{
+            background: url('../img/template/recherche-bg.png') no-repeat center center;
+            background-size: cover;
+            border: none;
+            box-shadow: none;
+            color: white;
+            padding-left: 30px;
+            &::-webkit-input-placeholder { color: white; }
+            &::-moz-placeholder { color: white; }
+            &:-ms-input-placeholder { color: white; }
+            &:-moz-placeholder { color: white; }
+          }
+          .input-group-button{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            input{
+              margin-left: -75px;
+              height: 100%;
+              background: $tonic;
+            }
+          }
+      }
+    }
+    .show-more{
+      color: rgba($medium-grey, 0.5);
+    }
+    .filtres-search{
+      border: 1px solid $medium-grey;
+      display: inline-block;
+      width: 30%;
+      color: $medium-grey;
+      padding-left: 10px;
+      &::-webkit-input-placeholder { color: white; }
+      &::-moz-placeholder { color: white; }
+      &:-ms-input-placeholder { color: white; }
+      &:-moz-placeholder { color: white; }
+      option{
+        background: $light-grey;
+      }
+    }
+    .filtres-more{
+      display: none;
+    }
+  }
+  .ttc-calendar{
+    background:  $medium-grey;
+    padding: 30px 40px;
+    h2{
+      font-family: 'AvenirBlack';
+      font-size: 24px;
+      color: $white;
+      text-transform: uppercase;
+      // margin-bottom: 40px;
+    }
+    .calendar-pagination{
+      margin-bottom: 20px;
+      a{
+        font-family: 'AvenirBook';
+        font-size: $font-size-base;
+        color: white;
+        text-transform: uppercase;
+        i{
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          text-align: center;
+          border: 1px solid white;
+          border-radius: 100%;
+        }
+        &.month-next{
+          i{
+            margin-right: 10px;
+          }
+        }
+        &.month-prev{
+          float: right;
+          i{
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+  .listing-pagination{
+    width: 100%;
+    margin-bottom: 20px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    a{
+      font-family: 'AvenirBook';
+      font-size: $font-size-base;
+      color: white;
+      text-transform: uppercase;
+      i{
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        text-align: center;
+        border: 1px solid white;
+        border-radius: 100%;
+      }
+      &.page-next{
+        i{
+          margin-right: 10px;
+        }
+      }
+      &.page-prev{
+        i{
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .numb-pagination{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    li{
+      list-style: none;
+      display: inline-block;
+      a{
+        background: rgba($black, 0.4);
+        color: $white;
+        padding: 4px 8px;
+        border-radius: 3px;
+        &:hover, &.active{
+          background: rgba($black, 0.8);
+        }
+      }
+    }
+  }
+  .ttc-actu{
+    background:  $medium-grey;
+    padding: 30px 40px;
+    .article-actu{
+      color: $white;
+      padding-bottom: 40px;
+      .link-article{
+        display: inline-block;
+        padding: 0;
+        img{
+          display: block;
+          max-width: 100%;
+          max-height: 100%;
+          margin-left: 19px;
+        }
+        a{
+          position: relative;
+          display: block;
+          width: 100%;
+          background: $tonic;
+          font-family: 'AvenirMedium';
+          font-size: $font-size-base;
+          text-transform: uppercase;
+          color: $white;
+          text-align: right;
+          padding: 10px;
+          &:before{
+            position: absolute;
+            top: -14px;
+            left: 0;
+            display: block;
+            width: 19px;
+            height: 14px;
+            content: '';
+            background: url('../img/template/article-triangle.png');
+          }
+          i{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            border: 1px solid white;
+            font-size: $font-size-big;
+            text-align: center;
+            margin-left: 10px;
+          }
+        }
+      }
+      .txt-article{
+        display: inline-block;
+        time{
+          font-family: 'AvenirBlack';
+          font-size: $font-size-base;
+        }
+        span{
+          font-size: $font-size-small;
+          color: $white-less;
+        }
+        h3{
+          font-family: 'AvenirBlack';
+          font-size: 32px;
+          text-transform: uppercase;
+        }
+        p{
+          display: block;
+          font-size: $font-size-small;
+        }
+      }
+    }
+  }
+
+  .comics-preview{
+    margin: 10px 0;
+    .thumbnail{
+      border: none;
+      margin-bottom: 0px;
+    }
+    .preview-info{
+      text-align: center;
+      color: $white;
+      text-transform: uppercase;
+      margin: 10px 0;
+      .info-title{
+        font-family: 'AvenirBook';
+        font-size: $font-size-small;
+        margin-bottom: -8px;
+      }
+      span{
+        font-family: 'AvenirBook';
+        font-size: $font-size-less;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.comics-rating{
+  display: block;
+  width: 100%;
+  i{
+    font-size: $font-size-base;
+    color: $tonic;
+  }
+}
+
+.comics-options{
+  display: block;
+  span{
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    &.options-like{
+      width: 18px;
+      height: 17px;
+      background: url("../img/template/like.png") no-repeat center top;
+      &:hover, &.active{
+        background-position: center bottom;
+      }
+    }
+    &.options-ring{
+      width: 18px;
+      height: 19px;
+      background: url("../img/template/ring.png") no-repeat center top;
+      &:hover, &.active{
+        background-position: center bottom;
+      }
+    }
+    &.options-add{
+      width: 17px;
+      height: 17px;
+      background: url("../img/template/add.png") no-repeat center top;
+      &:hover, &.active{
+        background-position: center bottom;
+      }
+    }
+  }
+}
+
+
+
+.sidebar{
+  background: $dark-blue;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  display: block;
+  height: auto;
+  margin-top: 30px;
+  @media screen and(min-width: 1200px) {
+    right: -25px;
+    &:before{
+      position: absolute;
+      top: -20px;
+      right: 0;
+      display: block;
+      width: 25px;
+      height: 20px;
+      content: '';
+      background: url('../img/template/sidebar-triangle.png');
+    }
+  }
+  h2{
+    display: block;
+    font-size: 17px;
+    text-transform: uppercase;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+.sidebar-inscrition{
+  color: $white;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid $white-less;
+  h2{
+    margin-bottom: 25px;
+  }
+  p{
+    display: block;
+    font-family: 'AvenirBlack';
+    font-size: $font-size-small;
+    text-transform: uppercase;
+  }
+  .button-tonic{
+    padding: 10px  ;
+    font-size: $font-size-small;
+    margin-bottom: 10px;
+    i{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      border: 1px solid white;
+      font-size: $font-size-big;
+      margin-left: 10px;
+    }
+  }
+  .info-inscription{
+    display: block;
+    font-size: $font-size-base;
+    color: rgba(white,0.5);
+    line-height: 17px;
+  }
+  @media screen and(min-width: 1200px) {
+    h2{
+      padding: 0 20px;
+    }
+    p{
+      padding: 0 20px;
+    }
+    .info-inscription{
+      padding: 0 40px;
+    }
+  }
+}
+
+.sidebar-top{
+  display: block;
+  background: $dark-blue;
+  padding: 20px 0;
+  border-bottom: 1px solid $white-less;
+  h2{
+    color: $white-less;
+    margin-bottom: 15px;
+  }
+  .owl-carousel{
+    background: $dark-blue;
+    margin-bottom: 20px;
+    .owl-item{
+      background: $dark-blue;
+    }
+    .owl-nav{
+      font-size: 40px;
+      color: $white;
+      text-align: center;
+      .owl-prev, .owl-next{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: auto;
+        height: 100%;
+      }
+      .owl-prev{
+        left: 0;
+      }
+      .owl-next{
+        right: 0;
+      }
+      &::after{
+        clear: both;
+      }
+    }
+    img{
+      background: $dark-blue;
+      width: 75% !important;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+}
+.sidebar-actu{
+  display: block;
+  background: $dark-blue;
+  padding: 20px 0;
+  text-align: center;
+  h2{
+    color: $white-less;
+    margin-bottom: 15px;
+  }
+  .link-article{
+    display: inline-block;
+    padding: 0;
+    img{
+      display: block;
+      max-width: 85%;
+      max-height: 100%;
+      margin-left: 19px;
+    }
+    a{
+      position: relative;
+      display: block;
+      width: 100%;
+      background: $tonic;
+      font-family: 'AvenirMedium';
+      font-size: $font-size-base;
+      text-transform: uppercase;
+      color: $white;
+      text-align: right;
+      padding: 10px;
+      &:before{
+        position: absolute;
+        top: -14px;
+        left: 0;
+        display: block;
+        width: 19px;
+        height: 14px;
+        content: '';
+        background: url('../img/template/article-triangle.png');
+      }
+      i{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        border: 1px solid white;
+        font-size: $font-size-big;
+        text-align: center;
+        margin-left: 10px;
+      }
+    }
+  }
+}

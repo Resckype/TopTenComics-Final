@@ -1,0 +1,483 @@
+* {
+  font-family: 'AvenirBook', sans-serif;
+}
+body{
+  overflow-x: hidden;
+}
+
+.yellow {
+  background: $tonic;
+  color:white;
+  text-transform: uppercase;
+  height: 50px;
+  width: 393px;
+  display:block;
+  line-height: 50px;
+  margin: 0 80px;
+  border: 0;
+}
+.superman form {
+  width: 393px;
+  margin: 0 auto;
+
+}
+.superman form input{
+  box-shadow: none;
+  margin: 0;
+}
+
+.superman p{
+  font-size: 12px;
+  line-height: 12px;
+}
+.superman form a{
+  font-size: 12px;
+  text-decoration: none;
+  color:#000;
+  display: block;
+  text-align: left;
+  margin-bottom: 20px;
+
+}
+.superman h4{
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+.superman h5{
+  font-size: 18px;
+  line-height: 20px;
+  margin: 0;
+
+}
+.superman .yellow{
+  margin: 30px 0;
+}
+.superman .blue{
+  background: #005B7D;
+  color:white;
+  text-transform: uppercase;
+  height: 50px;
+  width: 393px;
+  display:block;
+  line-height: 50px;
+  margin: 30px auto;
+  border: 0;
+}
+.superman label{
+  margin-top: 10px;
+  text-transform: uppercase;
+  display:block;
+  text-align:left;
+  font-size:18px;
+}
+.superman label.news {
+  text-transform: none;
+  display: inline-block;
+}
+.superman {
+  background: url(../img/template/super.png) center bottom no-repeat;
+  padding-bottom: 250px;
+}
+
+@media screen and (max-width: 320px) {
+  a.yellow {
+    margin:0;
+    width:100%;
+  }
+}
+
+.descriptif {
+  position: relative;
+}
+
+.blocnoir {
+  position: absolute;
+  top:385px;
+  left:-110px;
+  background: url(../img/template/fondnoir.png) no-repeat;
+  width: 413px;
+  height: 360px;
+  padding-left:80px;
+  padding-top:30px;
+  padding-right: 30px;
+}
+.blocnoir p {
+  font-size:14px;
+  line-height: 17px;
+  color:white;
+  font-weight:500;
+  text-align: justify;
+}
+.blocnoirliens {
+  margin-top: 40px;
+  margin-left:30px;
+}
+.blocnoirliens a {
+  width: 352px;
+  height: 35px;
+  line-height: 35px;
+  text-align: right;
+  text-transform: uppercase;
+  font-size:16px;
+  background: #444444;
+  display: block;
+  color:white;
+  margin-bottom: 5px;
+  padding-right: 10px;
+}
+.blocnoirliens a:nth-child(1) {
+  background: #FDBF00;
+  color:black;
+}
+.blocnoirliens a img {
+  padding-left: 5px;
+}
+.blocnoirliens a:nth-child(2) img {
+  padding-left: 7px;
+}
+.descriptif h1 {
+  font-size:50px;
+  line-height: 52px;
+  color:black;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.descriptif .stars i {
+  color:black;
+  font-size:30px;
+}
+.descriptif .stars {
+  color:black;
+  font-size:12px;
+  margin-bottom: 10px;
+  display:block;
+}
+.descriptif .label {
+  display:block;
+  width: 172px;
+  height: 22px;
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin:15px 0;
+  background: url(../img/template/buttonjaune1.png) center no-repeat;
+}
+.descriptif .label + em {
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 10px;
+  font-style: normal;
+}
+.descriptif h5 {
+  font-size:18px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom:0;
+}
+.descriptif h5 + p {
+  font-size:12px;
+  margin:0;
+  margin-bottom: 10px;
+}
+.descriptif .numeros a {
+  display:inline-block;
+  width: 26px;
+  height: 18px;
+  background: #DDDDDD;
+  color:black;
+  font-size:12px;
+  text-align:center;
+  line-height: 18px;
+}
+.descriptif .numeros a.numyellow {
+  background: #FFC800;
+}
+.fiche {
+  color:black;
+  font-size:13px;
+  text-align:center;
+  width: 268px;
+  display:block;
+  line-height: 35px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+.fiche a {
+  display: inline-block;
+  color:black;
+  font-size:20px;
+}
+.fiche a:nth-child(1) {
+  float:left;
+}
+.fiche a:nth-child(2) {
+  float:right;
+}
+.fichedescri{
+  padding-top: 30px;
+  padding-bottom: 200px;
+}
+.conteneurnoir{
+  background: url(../img/template/fondnoir2.png) center no-repeat;
+  width: 1200px;
+  height: 376px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+.conteneurnoir h5{
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.arrows{
+  margin-top: 150px;
+}
+.coverp img{
+      max-width: none;
+}
+.coverp figure{
+      margin: 0;
+}
+.coverp figcaption{
+  color:#fff;
+  padding-top: 5px;
+  font-size: 12px;
+}
+.coverp figcaption strong{
+  display: block;
+}
+.conteneurgris {
+  background: url(../img/template/fondgris.png) center no-repeat;
+  margin:0 auto;
+  width: 1200px;
+  height: 464px;
+  padding-top:25px;
+  position: relative;
+}
+.conteneurgris .row {
+  padding: 0 30px;
+}
+.conteneurgris h5 {
+  font-size:18px;
+  text-transform:uppercase;
+  margin-bottom:25px;
+}
+.conteneurgris h6 {
+  display: inline-block;
+  font-size:20px;
+  font-weight:900;
+  text-transform: uppercase;
+}
+.conteneurgris .arrows {
+  position: absolute;
+  top:230px;
+  margin:0;
+  left:15px;
+}
+.arrows-d {
+  right:15px;
+}
+.conteneurgris .fa {
+  font-size: 25px;
+}
+.conteneurgris .badges {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: black;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  margin-left: -20px;
+}
+.conteneurgris .avis-desc {
+  float:right;
+  width: 227px;
+  text-align: left;
+  padding-top: 15px;
+}
+.avis-desc p {
+  text-align: justify;
+  font-size:14px;
+  line-height: 17px !important;
+}
+.avis-img {
+  float:left;
+  padding-left:50px;
+}
+.conteneurgris h5 {
+  margin-bottom: 50px;
+}
+.laisse-avis{
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.ttc-info{
+  background: $blue;
+  text-align: center;
+  padding: 90px 0;
+  h1{
+    font-family: 'AvenirBook';
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+  }
+  h2{
+    font-family: 'AvenirBlack';
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+  }
+  a{
+    display: block;
+    &.button-tonic{
+      width: 300px;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      font-size: $font-size-base;
+      i{
+        margin-left: 10px;
+      }
+    }
+    &.info-inscription{
+      color: rgba(white,0.5);
+    }
+  }
+}
+
+.ttc-week{
+  background: $medium-grey;
+  padding: 50px 100px;
+  @media screen and (max-width: 768px){
+    padding: 40px;
+  }
+  h2{
+    font-family: 'AvenirBlack';
+    font-size: 24px;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  .comics-preview{
+    margin: 10px 0;
+    .thumbnail{
+      border: none;
+      margin-bottom: 0px;
+    }
+    .preview-info{
+      text-align: center;
+      color: $white;
+      text-transform: uppercase;
+      margin: 10px 0;
+      .info-title{
+        font-family: 'AvenirBlack';
+        font-size: $font-size-small;
+        margin-bottom: -8px;
+      }
+      span{
+        font-family: 'AvenirBook';
+        font-size: $font-size-less;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.ttc-last{
+  background: $blue;
+  padding-top: 40px;
+  margin-bottom: $footer-marge-top;
+  h2{
+    font-family: 'AvenirBlack';
+    font-size: 24px;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  .owl-carousel{
+    background: $blue;
+    margin-bottom: 20px;
+    .owl-item{
+      background: $blue;
+    }
+    .owl-nav{
+      font-size: 22px;
+      color: $white;
+      text-align: center;
+      .owl-prev, .owl-next{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background: rgba(black, 0.5);
+        width: 50px;
+        height: 100%;
+      }
+      .owl-prev{
+        left: 0;
+      }
+      .owl-next{
+        right: 0;
+      }
+      &::after{
+        clear: both;
+      }
+    }
+    img{
+      background: $blue;
+      max-width: 200px !important;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+  .ttc-new-link{
+    background: $dark-blue;
+    text-align: right;
+    padding: 20px;
+    a{
+      font-size: $font-size-base;
+      color: $white;
+      text-transform: uppercase;
+      i{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        border: 1px solid white;
+        border-radius: 100%;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.ttc-404{
+  background: $white;
+  .button-tonic{
+    width: 80%;
+    font-size: $font-size-small;
+  }
+  i{
+    margin-right: 10px;
+  }
+}
+.ttc-contact, .ttc-connect, .ttc-inscription{
+  background: $white;
+  padding-top: 40px;
+  margin-bottom: 0;
+}

@@ -1,0 +1,174 @@
+//
+// Header Style
+//
+
+.ttc-header {
+  position: relative;
+  z-index: 99;
+  .header-container {
+    background: $header-container-gradient;
+    height: 150px;
+    padding: 25px 0;
+    vertical-align: middle;
+    @media screen and(max-width: 767px) {
+      height: 100%;
+      min-height: 150px;
+    }
+    .nav-logo{
+      text-align: center;
+      vertical-align: middle;
+      a{
+        display: block;
+        vertical-align: middle;
+      }
+      .logo-title{
+        color: $tonic;
+        font-size: 15px;
+        text-transform: uppercase;
+      }
+    }
+    .nav-search{
+      display: table;
+      height: 100%;
+      vertical-align: middle;
+      text-align: center;
+      .input-group{
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        input{
+          height: 65px;
+          min-width: 50px;
+          border: none;
+          vertical-align: middle;
+        }
+        .input-group-field{
+          background: url('../img/template/barre.png') no-repeat center center;
+          background-size: contain;
+          border: none;
+          box-shadow: none;
+          color: white;
+          padding-left: 30px;
+          &::-webkit-input-placeholder { color: white; }
+          &::-moz-placeholder { color: white; }
+          &:-ms-input-placeholder { color: white; }
+          &:-moz-placeholder { color: white; }
+        }
+        .input-group-button{
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          input{
+            margin-left: -75px;
+            height: 100%;
+            background: $header-nav-input-search;
+          }
+        }
+      }
+    }
+    .nav-register{
+      position: relative;
+      background: $header-nav-register-bg;
+      height: 118px;
+      display: table;
+      text-align: right;
+      vertical-align: middle;
+      margin-top: -18px;
+      .register-container{
+        display: table-cell;
+        vertical-align: bottom;
+        padding-bottom: 28px;
+        a{
+          display: block;
+          color: $white;
+          font-family: 'AvenirBook';
+          font-size: $font-size-base;
+          text-transform: uppercase;
+          &:hover{
+            color: $tonic;
+          }
+        }
+      }
+      &::after{
+        position: absolute;
+        bottom: 0;
+        right: -26px;
+        display: block;
+        width: 26px;
+        height: 118px;
+        content: '';
+        background: url('../img/template/hoverprofil2.png');
+      }
+    }
+  }
+  .header-menu {
+    .top-bar{
+      background: $header-nav-menu-bg;
+      height: $header-nav-menu-height;
+      padding: 0;
+      text-align: center;
+      float: none;
+      text-align: center;
+      ul{
+        height: 100%;
+        li{
+          display: inline-block;
+          height: 100%;
+          text-align: center;
+          border: none;
+          vertical-align: middle;
+          a{
+            height: $header-nav-menu-height;
+            line-height: 40px;
+            font-family: 'AvenirBook';
+            font-size: $font-size-base;
+            font-weight: 300;
+            color: $white;
+            text-transform: uppercase;
+            vertical-align: middle;
+            &:hover{
+              color: $tonic;
+              @media screen and(min-width: 768px){
+                border-bottom: 5px solid $tonic;
+              }
+            }
+          }
+        }
+      }
+      @media screen and(max-width: 767px) {
+        .top-bar-title{
+          .menu-icon{
+            padding: 15px;
+            font-size: 30px;
+            color: $white;
+            vertical-align: middle;
+            cursor: pointer;
+          }
+        }
+        .dropdown{
+          margin-top: 66px;
+          background: $medium-grey;
+          li{
+            display: block;
+            a{
+              max-width: 240px;
+              font-family: 'AvenirMedium';
+              color: $white;
+              vertical-align: middle;
+              margin: 0 auto;
+              border-bottom: 1px solid $white;
+
+            }
+            &:last-child{
+              a{
+                border-bottom: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
